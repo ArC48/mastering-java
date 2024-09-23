@@ -15,15 +15,16 @@ public class FindFirstNumber {
             if (found) {
                 break;
             }
+            else {
 
-            for (int j = 0; j < numbers[i].length; j++) {
-                if (numbers[i][j] == target) {
-                    System.out.println("List: " + i + " index: " + j);
-                    found = true;
-                    break;
+                for (int j = 0; j < numbers[i].length; j++) {
+                    if (numbers[i][j] == target) {
+                        System.out.println("List: " + i + " index: " + j);
+                        found = true;
+                        break;
+                    }
                 }
             }
         }
-
     }
 }
